@@ -25,9 +25,10 @@
 
   # branch
   b = branch -v                     # branch (verbose)
+  ba = branch -a                    # branches list
 
   # commit
-  c = commit -m
+	c = commit -m
   ca = commit -am                   # commit all with message
   ci = commit                       # commit
   amend = commit --amend            # ammend your last commit
@@ -36,7 +37,7 @@
   # checkout
   cf = checkout --force             # checkout to last state
   co = checkout                     # checkout
-  nb = checkout -b                  # create and switch to a new branch (mnemonic: "git new branch branchname...")
+  cob = checkout -b                  # create and switch to a new branch (mnemonic: "git new branch branchname...")
 
   # cherry-pick
   cp = cherry-pick -x               # grab a change from a branch
@@ -54,7 +55,7 @@
   shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
 
   # pull
-  pl = pull                         # pull
+  pl = pull origin HEAD             # pull
 
   # push
   ps = push                         # push
@@ -81,7 +82,7 @@
 
   # status
 	s = status -u
-  st = status                       # status
+  st = status -s                    # status
   stat = status                     # status
 
   # tag
@@ -112,9 +113,8 @@
   # the usual default is to push all branches
   default = upstream
 [core]
-  autocrlf = false
   editor = vim
-  excludesfile = ~/.yadr/git/gitignore
+	excludesfile = /Users/atos/.gitignore_global
 [advice]
   statusHints = false
 [diff]
@@ -129,6 +129,5 @@
 [include]
   path = .gitconfig.user
 [user]
-  email = da.shramko@gmail.com
-  name = dshramko
-
+	email = da.shramko@gmail.com
+	name = dshramko

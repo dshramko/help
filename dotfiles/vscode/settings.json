@@ -1,0 +1,25 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.renderIndentGuides": true,
+  "editor.acceptSuggestionOnEnter": false,
+  "files.autoSave": "onWindowChange",
+  "files.autoSaveDelay": 1000,
+  "workbench.editor.openPositioning": "right",
+  "ruby.rubocop.executePath": "/Users/atos/.rvm/gems/ruby-2.3.4/bin/",
+  "files.trimTrailingWhitespace": true,
+  "auto-close-tag.activationOnLanguage": [
+        "html",
+        "javascript",
+        "ruby"
+    ],
+    "workbench.colorTheme": "Gruvbox Dark (Soft)",
+  "vim.enableNeovim": true,
+  "vim.disableAnnoyingNeovimMessage": true,
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#803535",
+    "editor.selectionHighlightBackground": "#696767",
+    "editor.wordHighlightBackground": "#564000"
+  }
+}
