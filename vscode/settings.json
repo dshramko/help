@@ -1,0 +1,43 @@
+{
+    "editor.fontFamily": "Ubuntu Mono",
+    "editor.fontSize": 16,
+    "editor.tabSize": 2,
+    "editor.renderIndentGuides": true,
+    "editor.acceptSuggestionOnEnter": "off",
+    "files.autoSave": "onWindowChange",
+    "files.autoSaveDelay": 1000,
+    "workbench.editor.openPositioning": "right",
+    "files.trimTrailingWhitespace": true,
+    "auto-close-tag.activationOnLanguage": [
+        "html",
+        "javascript",
+        "ruby"
+    ],
+    "workbench.colorTheme": "Gruvbox Dark (Medium)",
+    // "vim.enableNeovim": true,
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#803535",
+        "editor.selectionHighlightBackground": "#696767",
+        "editor.wordHighlightBackground": "#564000",
+        "statusBar.background": "#4eaceb",
+        "statusBar.noFolderBackground": "#4eaceb",
+        "statusBar.debuggingBackground": "#4eaceb",
+        "statusBar.foreground": "#000000"
+    },
+    "vim.statusBarColorControl": true,
+    "eslint.autoFixOnSave": false,
+    "tslint.autoFixOnSave": false,
+    "editor.formatOnSave": true,
+    "vim.statusBarColors": {
+        "normal": [
+            "#4eaceb",
+            "#000000"
+        ],
+        "insert": "#BF616A",
+        "visual": "#B48EAD",
+        "visualline": "#B48EAD",
+        "visualblock": "#A3BE8C",
+        "replace": "#D08770"
+    },
+    "vim.useCtrlKeys": false,
+}
