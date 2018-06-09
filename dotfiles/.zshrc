@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+alias vim="nvim"
+alias vi="nvim"
 alias r='rails server'
 alias rc='rails console'
 
@@ -9,16 +10,16 @@ alias ping_yadns='ping 77.88.8.8'
 alias ping_gateway=''
 
 # Cryptoarts
-alias ca_back=''
-alias ca_front=''
-alias ca_mailcatcher='mailcatcher --foreground --smtp-ip=0.0.0.0'
+alias mailcatcher='mailcatcher --foreground --smtp-ip=0.0.0.0'
 #ENV VARIALBES
-export DB_HOST=""
-export DB_USER=""
-export DB_PASSWD=""
-export CHAIN_HOST=""
-export REDIS_URL=""
-export SECRET_KEY_BASE=""
+export EDITOR="vim"
+alias dc='function _dex(){ docker exec -it "$1" /bin/bash -l -c "export TERM=xterm; exec bash" };_dex'
+# export DB_HOST="10.10.10.10"
+# export DB_USER="atos"
+# export DB_PASSWD="159753"
+# export CHAIN_HOST="http://mock.it:please"
+# export REDIS_URL="redis://10.10.10.10:6379/0"
+# export SECRET_KEY_BASE="2db556a9d4804ef7a374aca8959b31f670842f4868a46d2375c2190316ac89b962b5345177e0ce6dd70de3a4b2997942535b74945f8081703d718dc63f4795d6<Paste>"
 
 
 # Path to your oh-my-zsh installation.
@@ -115,4 +116,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$PATH:$HOME/.rvm/bin:$HOME/.yarn/bin"
+
+# Add AWS to PATH
+export PATH=~/.local/bin:$PATH
+
+# For Tilix shell
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
